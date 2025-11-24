@@ -1,0 +1,116 @@
+/* Reset e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #667eea; /* fundo azul estático */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container, .index-container {
+    background-color: #ffffff; /* fundo branco */
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    width: 360px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Descrição (index) */
+.index-container p {
+    color: #333333;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 14px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #764ba2; /* roxo para foco */
+    box-shadow: 0 0 8px rgba(118,75,162,0.4);
+}
+
+/* Botões */
+button, .btn {
+    padding: 14px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #764ba2; /* roxo estático */
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #5a3e9e; /* roxo mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+}
+
+/* Links */
+p a {
+    color: #764ba2;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: #5a3e9e;
+    text-decoration: underline;
+}
+
+/* Mensagens de erro ou sucesso */
+p.mensagem {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Botões do index */
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Responsividade */
+@media(max-width: 500px) {
+    .container, .index-container {
+        width: 90%;
+        padding: 40px 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
